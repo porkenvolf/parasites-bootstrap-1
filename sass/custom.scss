@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville:ital,wght@0,400;0,700;1,400&display=swap');
+
+
+
+
+/* BOOTSTRAP */
+/* Custom Bootstrap colors */
+$primary: #fd0775;
+$secondary: #cb30f8;
+$light: rgb(143, 143, 143);
+$dark:rgb(20, 20, 20);
+$info: rgb(29, 29, 29);
+
+/* Bootstrap nav */
+/* $nav-link-color: white;
+$nav-link-hover-color: $primary; */
+
+/* Bootstrap Font */
+$font-family-base: 'Poppins';
+
+/* Bootstrap links */
+$link-color: transparent;
+
+
+
+/* Bootstrap Carousel */
+$carousel-indicator-width: 15px;
+$carousel-indicator-height: 15px;
+
+/* Bootstrap Accordion */
+$accordion-bg: $dark;
+$accordion-border-color: $dark;
+$accordion-button-color: $light;
+$accordion-button-active-bg: $dark;
+$accordion-button-focus-border-color: $dark;
+
+/* Import Bootstrap */
+@import '../bootstrap/scss/bootstrap';
+
+
+.carousel-indicators {
+    button {
+        border-radius: 50%;
+    }
+}
+
+.border3D {
+    width: 100%;
+    margin: 0;
+    background-image: linear-gradient(to right, rgb(20, 20, 20), $primary, rgb(20, 20, 20));
+}
+
+.separator {
+
+    height: 50px;
+    /* background: -webkit-linear-gradient(to right, $primary 0%, $secondary 100%);
+    background: -moz-linear-gradient(to right, $primary 0%, $secondary 100%);
+    background: linear-gradient(to right, $primary 0%, $secondary 100%);
+    filter: opacity(50%); */
+}
+
+.navbar {
+    background: -webkit-linear-gradient(180deg, rgba(20, 20, 20, 0.7), transparent);
+    background: -moz-linear-gradient(180deg, rgba(20, 20, 20, 0.7), transparent);
+    background: linear-gradient(180deg, rgba(20, 20, 20, 0.7), transparent);
+
+    .nav-link {
+        color: white;
+        font-weight: bold;
+        filter: drop-shadow(0 0 0.75rem rgba(20, 20, 20, 0.3));
+
+    }
+}
+
+.navbar-scrolled {
+    background-color: $dark !important;
+    border-bottom: 1px solid $light;
+
+}
+
+.accordion-button:focus {
+    box-shadow: none;
+    border-color: rgba(0, 0, 0, .125);
+}
+
+.mainSect {
+
+    margin-top: 0px;
+    padding-top: 90px;
+    padding-bottom: 200px;
+}
+
+/* CUSTOM HYPERLINKS */
+.aGrey {
+    color: $light !important;
+
+    :hover {
+        color: tint-color(rgb(143, 143, 143), 60%) !important;
+    }
+}
+
+
+/* custom bootstrap accordion */
+.accordion-button {
+    border-top: 1px solid $light;
+}
+
+.accordion-button:focus {
+    border-top: 1px solid $light;
+}
+

@@ -1,0 +1,608 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+}
+
+
+@media screen and (min-aspect-ratio:16/18){  //landscape
+    :root{
+        --bgHeight: calc(100vw * 1.125);
+        --bgScale: 1.05;
+        --bgScroll: calc(100vh - var(--bgHeight));
+        --bgScroll2: min(var(--bgScroll), -1*var(--bgScroll));
+        --headScroll:calc(var(--bgHeight) * (-0.105));
+        --paraScroll: calc(var(--bgHeight) * (0.71));
+        --logoBigScroll: calc(-70%);
+        --paraBreate: 1.5%;
+
+        
+    }
+}
+@media screen and (max-aspect-ratio:16/18){  //portrait
+    :root{
+        --bgHeight: calc(100vh * 1.5);
+        --bgScale: 1;
+        --bgScroll: calc(110vh - var(--bgHeight));
+        --bgScroll2: min(var(--bgScroll), -1*var(--bgScroll));
+        --headScroll:calc(100vw * (-0.12));
+        --paraScroll: calc(100vw * (0.7));
+        --logoBigScroll: -30%;
+        --paraBreate: 10px;
+    }
+    
+}
+@media screen and (min-aspect-ratio:16/18) and (max-aspect-ratio:22/18){
+    :root{
+        --bgScroll: calc(100vh - var(--bgHeight)*1);
+        --logoBigScroll: calc(100vw * (-0.3));
+    }
+    
+
+}
+:root{
+    --animHeight: 100vh;
+    
+}
+
+.blackIntro{
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100vw;
+    background:black;
+    z-index: 9998;
+    animation-name: blackIntro;
+    animation-duration: 5s;
+    animation-fill-mode: forwards;
+    pointer-events:none;
+
+}
+ 
+
+    
+
+
+.heroAnim{
+    overflow-y: hidden;
+    overflow-x: hidden;
+    top: 0;
+    left: 0;
+
+    height: var(--animHeight);
+    max-height: var(--animHeight);
+
+
+    /* height: 100vh;
+    max-height: 100vh; */
+    width: 100%;
+    max-width: 100%; 
+    
+    /* text-align: center; */
+
+
+    /* FONDO */
+    
+    .heroBG{
+        
+        position: absolute;
+        
+        /* background-image: url("/img/bg.jpg"); */
+        animation-name: heroBG;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+        animation-delay: 1.5s;
+        z-index: 1;
+        
+
+        img{
+            
+            position: absolute;
+            
+            //centrar
+            left: 50%;
+            transform: translateX(-50%)
+            
+        }
+    } 
+    .brightUP{
+        
+        position: absolute;
+        top: var(--bgScroll2);
+        animation-name: none;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+        animation-delay: 0s;
+        
+        mix-blend-mode: screen;
+        
+        animation-delay: 0s;
+        z-index: 3;
+        
+
+        img{
+            position: absolute;
+            //centrar
+            left: 50%;
+            transform: translateX(-50%)
+            
+        }
+    } 
+    
+    
+    
+    /* FIN FONDO */
+
+
+    /* BICHO HEAD */
+    
+    .bichoHead{
+        position: absolute;
+        width: 100%;
+        max-width: 100%;
+        animation-name: bichoHead;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+        z-index: 2;
+        
+
+        img{
+            position: absolute;
+            
+
+            //centrar
+            left: 50%;
+            transform: translateX(-50%)
+        }
+    } /* FIN BICHO HEAD */
+
+
+
+    /* BICHO HANDS */
+    
+    .bichoHands{
+        position: absolute;
+        width: 100%;
+        max-width: 100%;
+        animation-name: bichoHands;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+        z-index: 2;
+
+        img{
+            position: absolute;
+            
+           
+
+            //centrar
+            left: 50%;
+            transform: translateX(-50%)
+        }
+    } /* FIN BICHO HANDS */
+
+    /* HOST HEAD */
+    
+    .heroHost{
+        position: absolute;
+        width: 100%;
+        max-width: 100%;
+        animation-name: heroHost;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+        z-index: 3;
+
+        img{
+            position: absolute;
+            bottom: 0;
+            
+
+            //centrar
+            left: 50%;
+            transform: translateX(-50%)
+        }
+    } /* FIN HOST HEAD */
+    
+    .logoBig{
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        animation-name: logoBig;
+        animation-duration: 5s;
+        animation-fill-mode: forwards;
+        
+        z-index: 9999;
+        img{
+            position: absolute;
+            
+            //centrar
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%,-50%);
+            
+            
+            
+        }
+    }
+    .paraHeadBreathe{
+        position: absolute;
+    
+        animation-name: paraHeadBreathe;
+        animation-duration: 5s;
+        animation-delay: 0.7s;
+        animation-iteration-count: infinite;
+
+    }
+    .paraHandsBreathe{
+        
+        position: absolute;
+        animation-name: paraHeadBreathe;
+        animation-duration: 5s;
+        animation-iteration-count: infinite;
+
+    }
+    .ray1{
+        position: absolute;
+        width: 100%;
+        max-width: 100%;
+        animation-name: ray1;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        z-index: 1;
+        
+    }
+    .ray1_2{
+        position: absolute;
+        width: 100%;
+        max-width: 100%;
+        animation-name: ray1_2;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-fill-mode: backwards;
+        z-index: 1;
+        
+    }
+    .ray2{
+        position: absolute;
+        width: 100%;
+        max-width: 100%;animation-name: ray2;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        z-index: 1;
+        
+    }
+    .ray2_2{
+        position: absolute;
+        width: 100%;
+        max-width: 100%;
+        animation-name: ray2_2;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        animation-fill-mode: backwards;
+        z-index: 1;
+        
+    }
+    .fog1{
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        max-width: 100%;
+        animation-name: fog1;
+        animation-duration: 10s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        z-index: 3;
+        img{
+            width: 90%;
+            height: auto;
+            position: absolute;
+            bottom: 15%;
+            //centrar
+            left: 50%;
+            
+            transform: translateX(-50%);
+        }
+
+    }
+    .fog2{
+        position: absolute;
+        top: 0;
+        height: 100vh;
+        width: 100%;
+        max-width: 100%;
+        animation-name: fog2;
+        animation-duration: 10s;
+        animation-fill-mode: forwards;
+        animation-iteration-count: infinite;
+        animation-timing-function: linear;
+        z-index: 3;
+
+        img{
+            width: 90%;
+            height: auto;
+            position: absolute;
+            -webkit-transform: scaleX(-1);
+            transform: scaleX(-1);
+            bottom: 15%;
+            //centrar
+            left: 50%;
+            transform: translateX(-50%);
+        }
+
+    }
+    .brightGlow{
+        position: absolute;
+        width: 100%;
+        max-width: 100%;
+        animation-name: bright;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: forwards;
+        animation-delay: 6s;
+        filter: opacity(0);
+        z-index: 1;
+
+    }
+    .dark{
+        
+        animation-name: dark;
+        animation-duration: 3s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: backwards;
+
+        
+    }
+    
+
+    .paused{
+        animation-play-state: paused !important;
+        -webkit-animation-play-state: paused !important;
+        -moz-animation-play-state: paused !important;
+      }
+    
+}
+@keyframes opacIN {
+    0% {filter: opacity(0%)}
+    99%{filter: opacity(0%);}
+    100% {filter: opacity(100%)}
+}
+@keyframes fog2 {
+    0% {right: 0%; filter: opacity(0%)}
+    30% {filter: opacity(100%)}
+    100% {right: 70%; filter: opacity(0%)}
+    
+}
+@keyframes fog1 {
+    0% {left: 0%; filter: opacity(0%)}
+    30% {filter: opacity(100%)}
+    100% {left: 70%; filter: opacity(0%)}
+    
+}
+@keyframes bright{
+    0% {filter: opacity(0%); filter: brightness(0%)}
+    50% {filter: opacity(100%); filter: brightness(120%)}
+    100% {filter: opacity(0%); filter: brightness(0%)}
+    
+}
+@keyframes dark{
+    0% {filter:  brightness(100%)}
+    50% {filter: brightness(70%)}
+    100% {filter: brightness(100%)}
+    
+}
+
+@keyframes ray2{
+    0% {right:0%; filter: opacity(80%)}
+    50% {filter: opacity(50%)}
+    100% {right: 100%; filter: opacity(50%)}
+    
+}
+@keyframes ray2_2{
+    0% {right:-100%; filter: opacity(80%)}
+    50% {filter: opacity(50%)}
+    100% {right: 0%; filter: opacity(50%)}
+    
+}
+@keyframes ray1{
+    0% {left:0%; filter: opacity(80%)}
+    50% {filter: opacity(50%)}
+    100% {left: 100%; filter: opacity(50%)}
+    
+}
+@keyframes ray1_2{
+    0% {left:-100%; filter: opacity(80%)}
+    50% {filter: opacity(50%)}
+    100% {left: 0%; filter: opacity(50%)}
+    
+}
+@keyframes paraHeadBreathe {
+    0% {top: var(--paraBreate)}
+    50% {top: calc(var(--paraBreate) * (-1))}
+    100% {top: var(--paraBreate)}
+    
+    
+}
+@keyframes logoBig {
+
+    0% {top:0%; filter: opacity(0%)}
+    15% {top:0%; filter: opacity(100%)}
+    30% {top: 0%;}
+    100% {top: var(--logoBigScroll)}
+    
+}
+@keyframes blackIntro{
+    
+    0% {filter: opacity(100%)}
+    30% {filter: opacity(100%)}
+    100% {filter: opacity(0%)}
+
+}
+@keyframes  heroBG{
+    0% {top:0%}
+    100% {top: var(--bgScroll2)}
+}
+@keyframes  bichoHead{
+    0% {bottom:5%; filter: brightness(0%)}
+    55% {bottom:5%; filter: brightness(10%)}
+    75% { filter: brightness(15%)}
+    100% {bottom: calc(var(--paraScroll)*1.1); filter: brightness(100%)}  
+}
+@keyframes  bichoHands{
+    0% {bottom:0%; filter: brightness(0%);}
+    45% {bottom:0%; filter: brightness(0%)}
+    65% { filter: brightness(15%)}
+    100% {bottom: calc(var(--paraScroll)*0.95); filter: brightness(100%);}    
+}
+@keyframes  heroHost{
+    0% {bottom: var(--headScroll);}
+    35% {bottom: var(--headScroll);}
+    100% {bottom: 0}    //esta unidad deberia depender de vw, ajustar
+}
+
+
+
+
+
+
+
+
+@media screen and (min-aspect-ratio:16/18){ //landscape
+    /* FONDO */
+    .heroBG{
+        width: 100vw;
+        height: auto;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    } /* FIN FONDO */
+    .brightUP{
+        
+        width: 100%;
+        height: auto;
+        img{
+            width: 100%;
+            height: auto;
+        }
+    }
+
+    /* BICHO HEAD */
+    .bichoHead{
+        height: var(--bgHeight);
+        width: 100%;
+        img{
+            bottom: -55%;
+            width: 65%;         
+            height: auto;
+        }
+
+    } /* FIn bICHO HEAD */
+    .bichoHands{
+        height: var(--bgHeight);
+        width: 100%;
+        img{
+            width: 65%;         
+            height: auto;
+            bottom: -65%;
+        }
+    }
+    .heroHost{
+        img{
+            width: 65%;         //esta unidad deberia depender de vw, ajustar
+            height: auto;
+        }
+    }
+    .logoBig{
+        img{
+            width: 40%;
+            height: auto;
+        }
+    }
+    .paraHeadBreathe{
+        width: 100%;
+        max-width: 100%;
+        bottom: 0px;
+    }
+    .paraHandsBreathe{
+        width: 100%;
+        max-width: 100%;
+        bottom: 0px;
+    }
+    
+}
+
+@media screen and (max-aspect-ratio:16/18){  //portrait
+    /* FONDO */
+    
+    .heroBG{
+        height: 100vh;
+        width: 100vw;
+        img{
+            height: var(--bgHeight);
+            width: auto;
+        }
+    }
+    .brightUP{
+        height: 100vh;
+        width: 100vw;
+        img{
+            height: 80%;
+            width: auto;
+        }
+
+    }
+    /* FIN FONDO */
+    .bichoHead{
+        
+        img{
+            bottom: -calc(100vw * 0);
+            width: 80%;         
+            height: auto;
+        }
+
+    }
+    .bichoHands{
+        img{
+            bottom: -calc(100vw * 0);
+            width: 80%;         //esta unidad deberia depender de vw, ajustar
+            height: auto;
+        }
+    }
+    .heroHost{
+        img{
+            width: 80%;         //esta unidad deberia depender de vw, ajustar
+            height: auto;
+        }
+    }
+    .logoBig{
+        img{
+            width: 50%;
+            height: auto;
+        }
+    }
+    .paraHeadBreathe{
+        width: 100%;
+        max-width: 100%;
+        bottom: 0px;
+    }
+    .paraHandsBreathe{
+        width: 100%;
+        max-width: 100%;
+        bottom: 0px;
+    }
+    
+}
+@media screen and (min-aspect-ratio:16/18) and (max-aspect-ratio:22/18){
+    .logoBig{
+        img{
+            width: 40%;
+        }
+    }
+
+}

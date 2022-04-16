@@ -1,0 +1,2 @@
+Misterios:
+- Si anim hero mide height:100vh aparece una barra blanca de 1px a la izquierda de la animacion
