@@ -5,6 +5,16 @@
 
 
 /* BOOTSTRAP */
+
+/* Bootstrap container breakpoints */
+$container-max-widths: (
+  sm: 540px,
+  md: 720px,
+  lg: 960px,
+  xl: 1040px,
+  xxl: 1140px
+);
+
 /* Custom Bootstrap colors */
 $primary: #fd0775;
 $secondary: #cb30f8;
