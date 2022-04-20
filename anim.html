@@ -11,39 +11,100 @@
 </head>
 
 <body>
-    <div class="heroAnim" style=" position: fixed">
-        <div id="heroBG" class="heroBG spaused"><img src="./img/bg.jpg" alt="" /></div>
-        <div id="ray1cont" class="heroBG">
-            <div id="ray1" class="ray1"><img src='./img/ray.png' alt="" /></div>
+    <div class="heroAnim" style="position: fixed">
+        <div id="heroBG" class="movie heroBG"><img src="./img/bg.jpg" alt="" /></div>
+        <div id="ray1cont" class="movie heroBG">
+            <div id="ray1" class="movie ray1"><img src='./img/ray.png' alt="" /></div>
         </div>
-        <div id="ray1_2cont" class="heroBG">
-            <div id="ray1_2" class="ray1_2"><img src='./img/ray.png' alt="" /></div>
+        <div id="ray1_2cont" class="movie heroBG">
+            <div id="ray1_2" class="movie ray1_2"><img src='./img/ray.png' alt="" /></div>
         </div>
-        <div id="ray2cont" class="heroBG">
-            <div id="ray2" class="ray2"><img src='./img/ray.png' alt="" /></div>
+        <div id="ray2cont" class="movie heroBG">
+            <div id="ray2" class="movie ray2"><img src='./img/ray.png' alt="" /></div>
         </div>
-        <div id="ray2_2cont" class="heroBG">
-            <div id="ray2_2" class="ray2_2"><img src='./img/ray.png' alt="" /></div>
+        <div id="ray2_2cont" class="movie heroBG">
+            <div id="ray2_2" class="movie ray2_2"><img src='./img/ray.png' alt="" /></div>
         </div>
-        <div id="bichoHands" class="bichoHands dpaused">
-            <div class="paraHandsBreathe"><img class="dark" src='./img/bichoManos.png' alt="" /></div>
+        <div id="bichoHands" class="movie bichoHands">
+            <div class="movie paraHandsBreathe"><img class="movie dark" src='./img/bichoManos.png' alt="" /></div>
         </div>
-        <div id="bichoHead" class="bichoHead dpaused">
-            <div class="paraHeadBreathe"><img class="dark" src='./img/bichoHead.png' alt="" /></div>
+        <div id="bichoHead" class="movie bichoHead">
+            <div class="movie paraHeadBreathe"><img class="dark" src='./img/bichoHead.png' alt="" /></div>
         </div>
-        <div class="fog1"><img src='./img/fog.png' alt="" /></div>
-        <div class="fog2"><img src='./img/fog.png' alt="" /></div>
+        <div class="movie fog1"><img src='./img/fog.png' alt="" /></div>
+        <div class="movie fog2"><img src='./img/fog.png' alt="" /></div>
 
-        <div id="heroHost" class="heroHost dpaused">
-            <div class="dark"><img src='./img/Head.png' alt="" /></div>
+        <div id="heroHost" class="movie heroHost">
+            <div class="movie dark"><img src='./img/Head.png' alt="" /></div>
         </div>
-        <div id="bright" class="brightUP">
-            <div class="brightGlow"><img src='./img/bright.png' alt="" /></div>
+        <div id="bright" class="movie brightUP">
+            <div class="movie brightGlow"><img src='./img/bright.png' alt="" /></div>
         </div>
-        <div id="blackIntro" class="blackIntro spaused"></div>
+        <div id="blackIntro" class="movie blackIntro"></div>
 
-        <div id="logoBig" class="logoBig dpaused"><img src='./img/logoBig.png' alt="" /></div>
+        <div id="logoBig" class="movie logoBig"><img src='./img/logoBig.png' alt="" /></div>
     </div>
+
+
+    <!-- script to detect visibility and pause the animation if its hidden -->
+    <script>
+        // Set the name of the hidden property and the change event for visibility
+        var hidden, visibilityChange;
+        if (typeof document.hidden !== "undefined") { // Opera 12.10 and Firefox 18 and later support
+            hidden = "hidden";
+            visibilityChange = "visibilitychange";
+            state = "visibilityState";
+        } else if (typeof document.mozHidden !== "undefined") {
+            hidden = "mozHidden";
+            visibilityChange = "mozvisibilitychange";
+            state = "mozVisibilityState";
+        } else if (typeof document.msHidden !== "undefined") {
+            hidden = "msHidden";
+            visibilityChange = "msvisibilitychange";
+            state = "msVisibilityState";
+        } else if (typeof document.webkitHidden !== "undefined") {
+            hidden = "webkitHidden";
+            visibilityChange = "webkitvisibilitychange";
+            state = "webkitVisibilityState";
+        }
+
+        var x = document.getElementsByClassName("movie");
+        if (document[hidden] == true) {
+            for (var i = 0; i < x.length; i++) {
+                x[i].classList.add('paused');
+            }
+        } else if (document[hidden] == false) {
+
+            for (var i = 0; i < x.length; i++) {
+                x[i].classList.remove('paused');
+            }
+        }
+
+        document.addEventListener(visibilityChange, function () {
+
+            console.log(document[hidden]);
+
+            if (document[hidden] == true) {
+                for (var i = 0; i < x.length; i++) {
+                    x[i].classList.add('paused');
+                }
+            } else if (document[hidden] == false) {
+
+                for (var i = 0; i < x.length; i++) {
+                    x[i].classList.remove('paused');
+                }
+            }
+        });
+
+    </script>
+
+
+
+
+
+
+
+
 </body>
 
 </html>

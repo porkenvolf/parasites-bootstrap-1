@@ -24,7 +24,7 @@
     <title>Hello, world!</title>
 
 
-    
+
 </head>
 
 
@@ -42,13 +42,14 @@
 </section>
 
 <!-- Main section, placed 100vh from the top -->
+
 <section style="position: absolute; top: 100vh; width: 100%;" id="pageContent">
 
     <!-- Navbar -->
 
-    
 
-    <nav class="navbar navbar-expand-lg py-1 navbar-dark fixed-top" id="app-navbar">
+
+    <nav class="navbar navbar-expand-lg py-1 navbar-dark fixed-top movie" id="app-navbar">
         <div class="container">
 
             <a class="navbar-brand" href="#">
@@ -64,19 +65,31 @@
             <div class="collapse navbar-collapse" id="navmenu">
                 <ul class="navbar-nav text-center text-sm-start">
                     <li class="nav-item mx-3">
-                        <a href="#about" class="nav-link">HOME</a>
+
+                        <a href="#about" class="nav-link">
+                            <span data-bs-toggle="collapse" data-bs-target="#navmenu">HOME</span>
+                        </a>
+
                     </li>
                     <li class="nav-item mx-3">
-                        <a href="#roadmap" class="nav-link">ROADMAP</a>
+                        <a href="#roadmap" class="nav-link">
+                            <span data-bs-toggle="collapse" data-bs-target="#navmenu">ROADMAP</span>
+                        </a>
                     </li>
                     <li class="nav-item mx-3">
-                        <a href="#team" class="nav-link">THE TEAM</a>
+                        <a href="#team" class="nav-link">
+                            <span data-bs-toggle="collapse" data-bs-target="#navmenu">THE TEAM</span>
+                        </a>
                     </li>
                     <li class="nav-item mx-3">
-                        <a href="#faq" class="nav-link">F.A.Q.</a>
+                        <a href="#faq" class="nav-link">
+                            <span data-bs-toggle="collapse" data-bs-target="#navmenu">F.A.Q.</span>
+                        </a>
                     </li>
                     <li class="nav-item mx-3">
-                        <a href="#aboutArt" class="nav-link">THE ART</a>
+                        <a href="#aboutArt" class="nav-link">
+                            <span data-bs-toggle="collapse" data-bs-target="#navmenu">THE ART</span>
+                        </a>
                     </li>
                     <li class="d-flex">
                         <div class="h1 lh-base d-block d-lg-none ms-auto me-auto my-2">
@@ -97,9 +110,9 @@
 
 
         </div>
-        
+
     </nav>
-    
+
 
     <!-- End Navbar -->
 
@@ -692,13 +705,6 @@
 
 
 
-
-
-
-
-
-
-
 <!-- Custom JS for background color on scrolling -->
 <script>
     window.addEventListener("scroll", function () {
@@ -711,6 +717,64 @@
         }
     });
 </script>
+
+
+
+<!-- script to detect visibility and pause the animation if its hidden -->
+<script>
+    // Set the name of the hidden property and the change event for visibility
+    var hidden, visibilityChange;
+    if (typeof document.hidden !== "undefined") { // Opera 12.10 and Firefox 18 and later support
+        hidden = "hidden";
+        visibilityChange = "visibilitychange";
+        state = "visibilityState";
+    } else if (typeof document.mozHidden !== "undefined") {
+        hidden = "mozHidden";
+        visibilityChange = "mozvisibilitychange";
+        state = "mozVisibilityState";
+    } else if (typeof document.msHidden !== "undefined") {
+        hidden = "msHidden";
+        visibilityChange = "msvisibilitychange";
+        state = "msVisibilityState";
+    } else if (typeof document.webkitHidden !== "undefined") {
+        hidden = "webkitHidden";
+        visibilityChange = "webkitvisibilitychange";
+        state = "webkitVisibilityState";
+    }
+
+    var x = document.getElementsByClassName("movie");
+    console.log(x[0])
+    if (document[hidden] == true) {
+        for (var i = 0; i < x.length; i++) {
+            x[i].classList.add('paused');
+        }
+    } else if (document[hidden] == false) {
+
+        for (var i = 0; i < x.length; i++) {
+            x[i].classList.remove('paused');
+        }
+    }
+
+    document.addEventListener(visibilityChange, function () {
+
+        console.log(document[hidden]);
+
+        if (document[hidden] == true) {
+            for (var i = 0; i < x.length; i++) {
+                x[i].classList.add('paused');
+            }
+        } else if (document[hidden] == false) {
+
+            for (var i = 0; i < x.length; i++) {
+                x[i].classList.remove('paused');
+            }
+        }
+    });
+
+</script>
+
+
+
 
 <!-- Optional JavaScript; choose one of the two! -->
 
