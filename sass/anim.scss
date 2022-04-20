@@ -384,18 +384,71 @@
     100% {left: 70%; filter: opacity(0%)}
     
 }
-@keyframes bright{
-    0% {filter: opacity(0%); filter: brightness(0%)}
-    50% {filter: opacity(100%); filter: brightness(120%)}
-    100% {filter: opacity(0%); filter: brightness(0%)}
+@keyframes dark{
+    0% {filter: brightness(100%)}
+    10% {filter: brightness(70%)}
+    11% {filter: brightness(100%)}
+
+    16% {filter: brightness(70%)}
+    17% {filter: brightness(100%)}
+    
+    21% {filter: brightness(70%)}
+    22% {filter: brightness(100%)}
+    
+    31% {filter: brightness(70%)}
+    32% {filter: brightness(100%)}
+    
+    51% {filter: brightness(70%)}
+    52% {filter: brightness(100%)}
+    
+    58% {filter: brightness(70%)}
+    59% {filter: brightness(100%)}
+    
+    72% {filter: brightness(70%)}
+    73% {filter: brightness(100%)}
+    
+    100% {filter: brightness(100%)}
     
 }
-@keyframes dark{
+/* @keyframes dark{
     0% {filter:  brightness(100%)}
     50% {filter: brightness(70%)}
     100% {filter: brightness(100%)}
     
+} */
+@keyframes bright{
+    0% {filter: opacity(0%); filter: brightness(0%)}
+    10% {filter: opacity(100%); filter: brightness(55%)}
+    11% {filter: opacity(0%); filter: brightness(0%)}
+
+    16% {filter: opacity(100%); filter: brightness(55%)}
+    17% {filter: opacity(0%); filter: brightness(0%)}
+    
+    21% {filter: opacity(100%); filter: brightness(55%)}
+    22% {filter: opacity(0%); filter: brightness(0%)}
+    
+    31% {filter: opacity(100%); filter: brightness(55%)}
+    32% {filter: opacity(0%); filter: brightness(0%)}
+    
+    51% {filter: opacity(100%); filter: brightness(55%)}
+    52% {filter: opacity(0%); filter: brightness(0%)}
+    
+    58% {filter: opacity(100%); filter: brightness(55%)}
+    59% {filter: opacity(0%); filter: brightness(0%)}
+    
+    72% {filter: opacity(100%); filter: brightness(55%)}
+    73% {filter: opacity(0%); filter: brightness(0%)}
+    
+    100% {filter: opacity(0%); filter: brightness(0%)}
+    
 }
+/* @keyframes bright{
+    0% {filter: opacity(0%); filter: brightness(0%)}
+    50% {filter: opacity(100%); filter: brightness(75%)}
+    100% {filter: opacity(0%); filter: brightness(0%)}
+    
+} */
+
 
 @keyframes ray2{
     0% {right:0%; filter: opacity(80%)}
