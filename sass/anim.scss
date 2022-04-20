@@ -109,7 +109,7 @@
     .brightUP{
         
         position: absolute;
-        top: var(--bgScroll2);
+        top: calc(var(--bgScroll2) - 10px);
         animation-name: none;
         animation-duration: 5s;
         animation-fill-mode: forwards;
@@ -341,7 +341,7 @@
         width: 100%;
         max-width: 100%;
         animation-name: bright;
-        animation-duration: 3s;
+        animation-duration: 5s;
         animation-iteration-count: infinite;
         animation-fill-mode: forwards;
         animation-delay: 6s;
@@ -352,7 +352,8 @@
     .dark{
         
         animation-name: dark;
-        animation-duration: 3s;
+        animation-duration: 5s;
+        animation-delay: 6s;
         animation-iteration-count: infinite;
         animation-fill-mode: backwards;
 
@@ -384,62 +385,39 @@
     100% {left: 70%; filter: opacity(0%)}
     
 }
-@keyframes dark{
-    0% {filter: brightness(100%)}
-    10% {filter: brightness(70%)}
-    11% {filter: brightness(100%)}
 
-    16% {filter: brightness(70%)}
-    17% {filter: brightness(100%)}
-    
-    21% {filter: brightness(70%)}
-    22% {filter: brightness(100%)}
-    
-    31% {filter: brightness(70%)}
-    32% {filter: brightness(100%)}
-    
-    51% {filter: brightness(70%)}
-    52% {filter: brightness(100%)}
-    
-    58% {filter: brightness(70%)}
-    59% {filter: brightness(100%)}
-    
-    72% {filter: brightness(70%)}
-    73% {filter: brightness(100%)}
-    
-    100% {filter: brightness(100%)}
-    
-}
 /* @keyframes dark{
     0% {filter:  brightness(100%)}
     50% {filter: brightness(70%)}
     100% {filter: brightness(100%)}
     
 } */
-@keyframes bright{
-    0% {filter: opacity(0%); filter: brightness(0%)}
-    10% {filter: opacity(100%); filter: brightness(55%)}
-    11% {filter: opacity(0%); filter: brightness(0%)}
+@keyframes dark{
+    0% {filter: brightness(100%)}
+    12% {filter: brightness(70%)}
 
-    16% {filter: opacity(100%); filter: brightness(55%)}
-    17% {filter: opacity(0%); filter: brightness(0%)}
+    25% {filter: brightness(100%)}
+    37% {filter: brightness(80%)}
+
+    62% {filter: brightness(100%)}
+    75% {filter: brightness(80%)}
+
+    100% {filter: brightness(100%)}
+}
+
+@keyframes bright{
+    0% {filter: brightness(0%)}
+    12% {filter: brightness(75%)}
+
+    25% {filter: brightness(0%)}
+    37% {filter: brightness(35%)}
+
+    62% {filter: brightness(0%)}
+    75% {filter: brightness(50%)}
+
+    100% {filter: brightness(0%)}
+
     
-    21% {filter: opacity(100%); filter: brightness(55%)}
-    22% {filter: opacity(0%); filter: brightness(0%)}
-    
-    31% {filter: opacity(100%); filter: brightness(55%)}
-    32% {filter: opacity(0%); filter: brightness(0%)}
-    
-    51% {filter: opacity(100%); filter: brightness(55%)}
-    52% {filter: opacity(0%); filter: brightness(0%)}
-    
-    58% {filter: opacity(100%); filter: brightness(55%)}
-    59% {filter: opacity(0%); filter: brightness(0%)}
-    
-    72% {filter: opacity(100%); filter: brightness(55%)}
-    73% {filter: opacity(0%); filter: brightness(0%)}
-    
-    100% {filter: opacity(0%); filter: brightness(0%)}
     
 }
 /* @keyframes bright{
