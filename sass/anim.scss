@@ -59,6 +59,13 @@
     pointer-events:none;
 
 }
+
+#app-navbar{
+    animation-name: navbarDown;
+    animation-delay: 3s;
+    animation-duration: 1s;
+    animation-fill-mode: backwards;
+}
  
 
     
@@ -366,6 +373,8 @@
         -webkit-animation-play-state: paused !important;
         -moz-animation-play-state: paused !important;
       }
+
+
     
 }
 @keyframes opacIN {
@@ -494,6 +503,10 @@
     0% {bottom: var(--headScroll);}
     35% {bottom: var(--headScroll);}
     100% {bottom: 0}    //esta unidad deberia depender de vw, ajustar
+}
+@keyframes navbarDown{
+    0% {top:-100px}
+    100% {top: 0px}
 }
 
 
