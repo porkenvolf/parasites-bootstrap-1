@@ -7,13 +7,11 @@
 /* BOOTSTRAP */
 
 /* Bootstrap container breakpoints */
-$container-max-widths: (
-  sm: 540px,
-  md: 720px,
-  lg: 960px,
-  xl: 1040px,
-  xxl: 1140px
-);
+$container-max-widths: (sm: 540px,
+    md: 720px,
+    lg: 960px,
+    xl: 1040px,
+    xxl: 1140px);
 
 /* Custom Bootstrap colors */
 $primary: #fd0775;
@@ -89,6 +87,12 @@ $accordion-button-focus-border-color: $dark;
 
 }
 
+@media screen and (max-width: 992px) {
+    .navbar {
+        background-color: $dark !important;
+    }
+}
+
 .accordion-button:focus {
     box-shadow: none;
     border-color: rgba(0, 0, 0, .125);
@@ -119,4 +123,3 @@ $accordion-button-focus-border-color: $dark;
 .accordion-button:focus {
     border-top: 1px solid $light;
 }
-

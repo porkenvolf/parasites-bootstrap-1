@@ -62,7 +62,7 @@
 
 #app-navbar{
     animation-name: navbarDown;
-    animation-delay: 3s;
+    animation-delay: 5s;
     animation-duration: 1s;
     animation-fill-mode: backwards;
 }
@@ -348,7 +348,7 @@
         width: 100%;
         max-width: 100%;
         animation-name: bright;
-        animation-duration: 6s;
+        animation-duration: 3s;
         animation-iteration-count: infinite;
         animation-fill-mode: forwards;
         animation-delay: 6s;
@@ -359,8 +359,7 @@
     .dark{
         
         animation-name: dark;
-        animation-duration: 6s;
-        animation-delay: 6s;
+        animation-duration: 3s;
         animation-iteration-count: infinite;
         animation-fill-mode: backwards;
 
@@ -395,13 +394,13 @@
     
 }
 
-/* @keyframes dark{
+@keyframes dark{
     0% {filter:  brightness(100%)}
     50% {filter: brightness(70%)}
     100% {filter: brightness(100%)}
     
-} */
-@keyframes dark{
+}
+/* @keyframes dark{
     0% {filter: brightness(100%)}
     12% {filter: brightness(78%)}
 
@@ -412,9 +411,9 @@
     75% {filter: brightness(78%)}
 
     100% {filter: brightness(100%)}
-}
+} */
 
-@keyframes bright{
+/* @keyframes bright{
     0% {filter: brightness(0%)}
     12% {filter: brightness(75%)}
 
@@ -428,13 +427,13 @@
 
     
     
-}
-/* @keyframes bright{
+} */
+@keyframes bright{
     0% {filter: opacity(0%); filter: brightness(0%)}
     50% {filter: opacity(100%); filter: brightness(75%)}
     100% {filter: opacity(0%); filter: brightness(0%)}
     
-} */
+}
 
 
 @keyframes ray2{
