@@ -341,7 +341,7 @@
         width: 100%;
         max-width: 100%;
         animation-name: bright;
-        animation-duration: 5s;
+        animation-duration: 6s;
         animation-iteration-count: infinite;
         animation-fill-mode: forwards;
         animation-delay: 6s;
@@ -352,7 +352,7 @@
     .dark{
         
         animation-name: dark;
-        animation-duration: 5s;
+        animation-duration: 6s;
         animation-delay: 6s;
         animation-iteration-count: infinite;
         animation-fill-mode: backwards;
@@ -394,13 +394,13 @@
 } */
 @keyframes dark{
     0% {filter: brightness(100%)}
-    12% {filter: brightness(70%)}
+    12% {filter: brightness(78%)}
 
     25% {filter: brightness(100%)}
-    37% {filter: brightness(80%)}
+    37% {filter: brightness(78%)}
 
     62% {filter: brightness(100%)}
-    75% {filter: brightness(80%)}
+    75% {filter: brightness(78%)}
 
     100% {filter: brightness(100%)}
 }
@@ -410,10 +410,10 @@
     12% {filter: brightness(75%)}
 
     25% {filter: brightness(0%)}
-    37% {filter: brightness(35%)}
+    37% {filter: brightness(50%)}
 
     62% {filter: brightness(0%)}
-    75% {filter: brightness(50%)}
+    75% {filter: brightness(60%)}
 
     100% {filter: brightness(0%)}
 
