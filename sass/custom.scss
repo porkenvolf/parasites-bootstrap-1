@@ -20,9 +20,7 @@ $light: rgb(143, 143, 143);
 $dark:rgb(20, 20, 20);
 $info: rgb(29, 29, 29);
 
-/* Bootstrap nav */
-/* $nav-link-color: white;
-$nav-link-hover-color: $primary; */
+
 
 /* Bootstrap Font */
 $font-family-base: 'Poppins';
@@ -77,7 +75,9 @@ $accordion-button-focus-border-color: $dark;
         color: white;
         font-weight: bold;
         filter: drop-shadow(0 0 0.75rem rgba(20, 20, 20, 0.3));
-
+    }
+    .nav-link:hover{
+        color: #fd0775;
     }
 }
 
