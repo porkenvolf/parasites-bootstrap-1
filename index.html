@@ -37,28 +37,28 @@
     <!-- Generic open-graph tags -->
     <meta property="og:site_name" content="Overattached Parasites | NFT club">
     <meta property="og:title" content="Overattached Parasites | NFT club">
-    <meta property="og:description" content="Overattached Parasites is a new #NFT project within the #Solana blockchain. Though we are a newborn race, we’re going all-out to make it right or die trying.">
+    <meta property="og:description"
+        content="Overattached Parasites is a new #NFT project within the #Solana blockchain. Though we are a newborn race, we're going all-out to make it right or die trying.">
     <meta property="og:url" content="https://overattachedparasites.club/">
     <meta property="og:type" content="website">
-    
-
-
-
 
     <!-- Size of image. Any size up to 300. Anything above 300px will not work in WhatsApp -->
-    <meta property="og:image" content="https://raw.githubusercontent.com/porkenvolf/parasites-bootstrap-1/main/img/social/og-image-whatsapp.jpg">
+    <meta property="og:image"
+        content="https://raw.githubusercontent.com/porkenvolf/parasites-bootstrap-1/main/img/social/og-image-whatsapp.jpg">
     <meta property="og:image:type" content="image/jpeg">
     <meta property="og:image:width" content="300">
     <meta property="og:image:height" content="300">
-
-
 
     <!-- Twitter open-graph tags -->
     <meta name="twitter:card" content="summary_large_image">
     <meta name="twitter:image:alt" content="OAP Banner">
     <meta name="twitter:title" content="Overattached Parasites | NFT club">
     <meta name="twitter:description"
-        content="Overattached Parasites is a new #NFT project within the #Solana blockchain. Though we are a newborn race, we’re going all-out to make it right or die trying.">
+        content="Overattached Parasites is a new #NFT project within the #Solana blockchain. You wouldn't believe the absolutely INSANE value a stupid sentence like this has for luring viewers into your website lmao">
+    <!-- 
+    <meta name="twitter:description"
+        content="Overattached Parasites is a new #NFT project within the #Solana blockchain. Though we are a newborn race, we're going all-ou"> 
+    -->
     <meta name="twitter:image"
         content="https://raw.githubusercontent.com/porkenvolf/parasites-bootstrap-1/main/img/social/og-image.jpg">
 
@@ -79,10 +79,10 @@
 
 
 <!-- Animation -->
-<section style="position: fixed;" id="anim">
+<section style="position: fixed;">
     <div class="container-fluid p-0 m-0">
 
-        <iframe src="anim.html" style="width: 100vw; height: 100vh;"></iframe>
+        <iframe src="anim.html" style="background: black; width: 100vw; height: 100vh;" id="anim"></iframe>
 
 
     </div>
@@ -100,7 +100,7 @@
     <nav class="navbar navbar-expand-lg py-1 fixed-top movie" id="app-navbar">
         <div class="container">
 
-            <a class="navbar-brand" href="#">
+            <a class="navbar-brand" href="#" id="brandIso">
                 <img src="img/iso.png" alt="..." height="50">
             </a>
 
@@ -194,14 +194,14 @@
                 <!-- Right col -->
                 <div class="col-lg-4 px-4 py-lg-5">
                     <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
-                        <div class="carousel-indicators">
+                        <!-- <div class="carousel-indicators">
                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
                                 class="active" aria-current="true" aria-label="Slide 1"></button>
                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
                                 aria-label="Slide 2"></button>
                             <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
                                 aria-label="Slide 3"></button>
-                        </div>
+                        </div> -->
                         <div class="carousel-inner rounded-3 pb-5">
                             <div class="carousel-item active">
                                 <img src="img\Parasite-for-showcase-1of3.jpg" class="d-block w-100" alt="...">
@@ -595,102 +595,111 @@
                 <hr class="d-none d-md-block my-5">
             </div>
 
-            <div class="row justify-content-center h5 lh-base">
-                <div class="col-12 col-sm-7">
-                    <div style="float: right;" class="h5">
-                        <img src="img/placeholder.png" alt=""
-                            style="width: 500px; margin-right: -250px;  padding-bottom: 10px; padding-left: 35px;"
-                            class="overflow d-none d-lg-block">
-                        <img src="img/placeholder.png" alt="" class="d-block d-lg-none img-fluid">
-
-                    </div>
-                    <!-- <p class="h1 text-primary">Lorem ipsum dolor sit amet.</p> -->
-                    <p class="lh-base mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, eius
-                        est? Deserunt quis vero sunt, fuga
-                        nulla eius quasi aliquam aperiam explicabo nesciunt! Magni dolore tempore quaerat, ex
-                        blanditiis
-                        alias
-                        consequuntur eum, animi et deserunt, aliquam voluptatum minima in dignissimos ducimus
-                        repellat
-                        dolorum.
-                        Mollitia quasi esse placeat deserunt? Quo earum est maiores, vitae deleniti tenetur quam
-                        perferendis
-                        repellat temporibus quisquam libero delectus dicta sequi velit, necessitatibus blanditiis
-                        laborum quas
-                        excepturi expedita quos sit vel! Dolore repellat repudiandae impedit sequi est eum optio sed
-                        mollitia
-                        accusamus. Doloremque, voluptatibus modi. Nemo iusto placeat cumque laboriosam, dicta
-                        reprehenderit?
-                        Recusandae placeat, id, ad repellat expedita doloribus assumenda veniam tenetur ea a
-                        molestias.
-                        Cumque
-                        dicta repellat, deserunt est nihil corrupti reprehenderit veniam fugit, laborum, quis
-                        suscipit
-                        magnam.
+            <!-- section content -->
+            <div class="row d-block h5 lh-base">
+                <div class="col-12">
+                    <p class="h4 text-primary">AN OVERVIEW</p>
+                    <p class="text-white">
+                        Our art is composed by several <span class="text-primary fw-bold">assets designed to be
+                            procedurally assembled</span> into unique pieces
+                        depicting abhorrently grotesque parasites feeding on their hosts.
                     </p>
+                </div>
 
-
-
-                    <div style="float: left;" class="">
-                        <img src="img/Presenting-background-img2.jpg" alt=""
-                            style="width: 500px; margin-left: -250px; padding-bottom: 10px; padding-right: 35px;"
-                            class="overflow d-none d-lg-block">
-                        <img src="img/Presenting-background-img2.jpg" alt="" class="d-block d-lg-none img-fluid">
-
-                    </div>
-                    <p class="h2 text-primary mb-5">Lorem ipsum dolor sit amet.</p>
-                    <p class="lh-base mb-5">We felt like offering more than a medium for speculation, that’s why we
-                        bet high on creativity and the art itself, crafting every asset with passion and a digital art
-                        style that combines hard edge front figures over a canvas showing off each stroke in a
-                        traditional way. Our backgrounds are by themselves standalone pieces of artwork carefully
-                        painted by hand, made to function in harmony with the whole list of parasite and host parts.
-
-                        <br><br>
-                        Probably the most distinguishing visual aspect of our art is the intense diagonal in the back.
-                        It plays an important role bringing dramatic contrast to the piece. It’s there to represent a
-                        vivid sense of perturbation; an annoying buzz felt by the host, in a similar way of those we’ve
-                        seen in several manga/anime.
+                <div class="col-8 d-flex lh-lg mx-auto my-5">
+                    <span>
+                        The categories for these are:
+                        <ul class="ms-5 me-5">
+                            <li>Parasite eyes</li>
+                            <li>Parasite mouth</li>
+                            <li>Parasite abdomen</li>
+                            <li>Parasite antennae</li>
+                            <li>Parasite tail</li>
+                            <li>Parasite wings</li>
+                            <li>Host hairstyle</li>
+                            <li>Host eyes</li>
+                            <li>Host ears</li>
+                            <li>Host arms</li>
+                        </ul>
+                    </span>
+                    <img src="img/Parasites-sketch-concept-v1.jpg" class="img-fluid w-50" alt="">
+                </div>
+                <div class="col-12">
+                    <p>
+                        When brainstorming this project we arrived at the idea of giving a twist to the more common cute
+                        PFP furry avatar, our take was to <span class="text-primary fw-bold">become the parasites</span>
+                        that feed on them instead. <br><br>
+                        That notion of trying to do something a bit different also impacted the art direction, in
+                        particular the color palette. <br><br>
+                        Instead of going for the same pastel tones we preferred a neutral palette for the protagonists
+                        and an intense oversaturated background to complement the dark mood for a <span
+                            class="text-primary fw-bold">high visual impact</span>
+                        final result.
                     </p>
+                </div>
+                <div class="col-12 my-5">
+                    <p class="h4 text-primary">THE FOREGROUND</p>
+                    <img src="img/Website-Art-Section-Process-Compiled-B.jpg" class="my-3" alt="">
+                    <p class="my-4 pe-3">
+                        The foreground of the pieces is portrayed in <span class="text-primary fw-bold"> a classic
+                            cartoon style</span>. We went for hard edges and
+                        a limited palette consisting of three levels of intensity for each color: a neutral base, a
+                        layer for the shadows, and a layer for the highlights. <br><br>
+                        The choice of colors for both the parasite and the host was made to be neutral on purpose. We
+                        went for a dark and moody look and wanted the collection to have a coherent style across all the
+                        pieces.
+                    </p>
+                </div>
 
-                    <div style="float: right;" class="">
-                        <img src="img/placeholder.png" alt=""
-                            style="width: 500px; margin-right: -250px; padding-bottom: 10px; padding-left: 35px;"
-                            class="overflow d-none d-lg-block">
-                        <img src="img/placeholder.png" alt="" class="d-block d-lg-none img-fluid">
+                <div class="col-12 my-5">
+                    <div class="d-flex">
+                        <p class="me-4">
+                            <span class="h4 text-primary">THE BACKGROUND</span> <br> <br>
 
+                            Probably the most distinguishing visual aspect of our art is the <span
+                                class="text-primary fw-bold">intense diagonal in the
+                                background</span>. <br><br>
+                            It plays an important role bringing dramatic contrast to the piece. It's there to represent
+                            a vivid <span class="text-primary fw-bold">sense of perturbation</span>; an annoying buzz
+                            felt by the host, in a similar way of those
+                            we've already seen in several manga/anime to portray the same feeling. <br><br>
+                            Each background was carefully painted by hand, made to function in harmony with the whole
+                            list of parasite and host parts.
+
+                        </p>
+                        <img src="img/Website-Art-Section-Ray-Saorisan.jpg" class="img-fluid" alt=""
+                            style="width: 30%; padding-right: 3%;">
                     </div>
-                    <p class="h2 text-primary">Lorem ipsum dolor sit amet.</p>
-                    <p class="lh-base mb-5">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, eius
-                        est? Deserunt quis vero sunt, fuga
-                        nulla eius quasi aliquam aperiam explicabo nesciunt! Magni dolore tempore quaerat, ex
-                        blanditiis
-                        alias
-                        consequuntur eum, animi et deserunt, aliquam voluptatum minima in dignissimos ducimus
-                        repellat
-                        dolorum.
-                        Mollitia quasi esse placeat deserunt? Quo earum est maiores, vitae deleniti tenetur quam
-                        perferendis
-                        repellat temporibus quisquam libero delectus dicta sequi velit, necessitatibus blanditiis
-                        laborum quas
-                        excepturi expedita quos sit vel! Dolore repellat repudiandae impedit sequi est eum optio sed
-                        mollitia
-                        accusamus. Doloremque, voluptatibus modi. Nemo iusto placeat cumque laboriosam, dicta
-                        reprehenderit?
-                        Recusandae placeat, id, ad repellat expedita doloribus assumenda veniam tenetur ea a
-                        molestias.
-                        Cumque
-                        dicta repellat, deserunt est nihil corrupti reprehenderit veniam fugit, laborum, quis
-                        suscipit
-                        magnam.
+                </div>
+                <div class="col-12">
+                    <img src="img/Website-Art-Section-Background-Compiled-C.jpg" alt="">
+                </div>
+                <div class="col-12 my-5 pe-3">
+
+                    <p class="h4 text-primary">SOME FINAL WORDS</p>
+                    <p>
+                        We felt like offering more than just a medium for speculation, that's why <span
+                            class="text-primary fw-bold">we bet high on
+                            creativity and the art itself</span>. We are, first and foremost, artists trying to express
+                        ourselves
+                        and to do creative work whenever possible. <br><br>
+                        That's why every asset and every part of this project was crafted with hard work, passion and a
+                        style that tries to be an authentic representation of ourselves. <br><br>
+                        If you got this far we would like to give you our most sincere <span
+                            class="text-primary fw-bold">THANK YOU!</span> And as a special
+                        easter egg, here is the very first sketch for this project, some lines that represent the start
+                        of something very fun.
                     </p>
 
                 </div>
-                <!-- separador mobile -->
-                <div class="d-block d-sm-none col-12 justify-content-center">
-                    <hr style="position: relative; left:40%; bottom: -140px; width: 25%; height: 3px;">
+                <div class="col-9 mx-auto">
+                    <img src="img/First-Sketch-Concept-Framed-B.jpg" alt="" class="img-fluid">
                 </div>
+
             </div>
-        </div>
+
+
+
     </section>
 
     <!-- Separator -->
@@ -722,10 +731,10 @@
                     </div>
                     <img src="img/iso.png" alt="" class="img-fluid mb-5" style="width: 150px;">
                     <div class="h4 lh-base">
-                        <a href="#"><i class="bi bi-twitter text-light mx-1"></i></a>
-                        <a href="#"><i class="bi bi-instagram text-light mx-1"></i></a>
-                        <a href="#"><i class="bi bi-facebook text-light mx-1"></i></a>
-                        <a href="#"><i class="bi bi-linkedin text-light mx-1"></i></a>
+                        <a href="#"><i class="bi bi-twitter mx-1"></i></a>
+                        <a href="#"><i class="bi bi-instagram mx-1"></i></a>
+                        <a href="#"><i class="bi bi-facebook mx-1"></i></a>
+                        <a href="#"><i class="bi bi-linkedin mx-1"></i></a>
                     </div>
                     <span class="align-text-bottom text-center mt-5 text-light">Copyright © 2022 Overattached
                         Parasites</span>
@@ -776,6 +785,15 @@
             document.getElementById("app-navbar").classList.remove('navbar-scrolled');
         }
     });
+</script>
+
+<!-- Script to reload animation iframe when iso is clicked -->
+<script>
+    var iso = document.getElementById('brandIso')
+    var anim = document.getElementById('anim')
+    iso.addEventListener("click", function(){
+        anim.src = anim.src
+    })
 </script>
 
 

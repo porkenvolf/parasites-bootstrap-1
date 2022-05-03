@@ -58,18 +58,7 @@
     animation-fill-mode: forwards;
     pointer-events:none;
 
-}
-
-#app-navbar{
-    animation-name: navbarDown;
-    animation-delay: 5s;
-    animation-duration: 2s;
-    animation-fill-mode: backwards;
-}
- 
-
-    
-
+}  
 
 .heroAnim{
     overflow-y: hidden;
@@ -504,10 +493,7 @@
     35% {bottom: var(--headScroll);}
     100% {bottom: 0}    //esta unidad deberia depender de vw, ajustar
 }
-@keyframes navbarDown{
-    0% {top:-100px}
-    100% {top: 0px}
-}
+
 
 
 
