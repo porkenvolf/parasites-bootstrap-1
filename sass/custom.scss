@@ -77,13 +77,13 @@ $accordion-button-focus-border-color: $dark;
     animation-duration: 2s;
     animation-fill-mode: backwards;
 
-    a {
+    .nav-link {
         color: white;
         font-weight: bold;
         filter: drop-shadow(0 0 0.75rem rgba(20, 20, 20, 0.3));
     }
 
-    a:hover {
+    .nav-link :hover {
         color: #fd0775;
     }
 
