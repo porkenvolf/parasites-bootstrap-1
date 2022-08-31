@@ -79,11 +79,11 @@
 
 
 <!-- Animation -->
-<section style="position: fixed;">
-    <div class="container-fluid p-0 m-0 d-none d-lg-block">
-
+<section style="position: fixed; width: 100vw; height: 100vh; background-image: url('img/Website-Responsive-Hero.jpg'); background-position: center bottom; background-repeat: no-repeat; background-size: cover;">
+    <div class="container-fluid p-0 m-0 d-none d-lg-block" >
+        
         <iframe src="anim.html" style="background: black; width: 100vw; height: 100vh;" id="anim"></iframe>
-
+        
 
     </div>
 
@@ -283,7 +283,7 @@
         <div class="container">
             <!-- Section intro -->
             <div class="row justify-content-start">
-                <div class="col-lg-8 pb-sm-2">
+                <div class="col-lg-8 pb-sm-5">
                     <p class="text-primary h4 lh-base">
                         ABOUT THE ART
                     </p>
@@ -298,7 +298,7 @@
             <!-- section content -->
             <div class="row d-block h5 lh-base pb-sm-5">
                 <div class="col-12 mb-3 mb-sm-5">
-                    <p class="h4 text-primary">AN OVERVIEW</p>
+                    <p class="h4 text-primary mt-3">AN OVERVIEW</p>
                     <p class="text-white">
                         Our art is composed by several <span class="text-primary fw-bold">assets designed to be
                             procedurally assembled</span> into unique pieces
@@ -344,10 +344,40 @@
                         final result.
                     </p>
                 </div>
-                <div class="col-12 my-5">
-                    <p class="h4 text-primary">THE FOREGROUND</p>
-                    <img src="img/Website-Art-Section-Process-Compiled-B.jpg" class="my-3 img-fluid" alt="">
-                    <p class="my-4 pe-3">
+                <p class="h4 text-primary mt-5">THE FOREGROUND</p>
+                <div class="col-12 my-5 d-flex">
+                    
+                    <div id="carouselART" class="carousel slide col-4 carousel-fade" data-bs-ride="carousel" data-bs-pause="false">
+                        <!-- <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselART" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselART" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselART" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                        </div> -->
+                        <div class="carousel-inner pb-5">
+                            <div class="carousel-item active" data-bs-interval="2000">
+                                <img src="img/Website-Art-Section-Process-standalone-01.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="2000">
+                                <img src="img/Website-Art-Section-Process-standalone-02.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+
+                                </div>
+                            </div>
+                            <div class="carousel-item" data-bs-interval="3000">
+                                <img src="img/Website-Art-Section-Process-standalone-03.jpg" class="d-block w-100" alt="...">
+                                <div class="carousel-caption d-none d-md-block">
+
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="col-7 ps-5">
                         The foreground of the pieces is portrayed in <span class="text-primary fw-bold"> a classic
                             cartoon style</span>. We went for hard edges and
                         a limited palette consisting of three levels of intensity for each color: a neutral base, a
@@ -368,8 +398,7 @@
                                 background</span>. <br><br>
                             It plays an important role bringing dramatic contrast to the piece. It's there to represent
                             a vivid <span class="text-primary fw-bold">sense of perturbation</span>; an annoying buzz
-                            felt by the host, in a similar way of those
-                            we've already seen in several manga/anime to portray the same feeling. <br><br>
+                            felt by the host, as seen in several manga/anime to portray the same feeling. <br><br>
                             Each background was carefully painted by hand, made to function in harmony with the whole
                             list of parasite and host parts.
 
@@ -440,7 +469,7 @@
                             Let's be straightforward. There wasn't much planning at all. We had some good brainstorming
                             sessions in which we shaped the concept and the art style.
                             Later, having settled that, we concluded the concept could work as an allegory for mental
-                            health suffering. This subjet will come up later.<br>
+                            health suffering. This subject will come up later.<br>
                             If you want to know how and why we chose to spawn these little mostrosities you can read
                             more about it <a href="">here</a>.
                         </p>
@@ -455,8 +484,7 @@
 
                     <div class="col-md-6 px-lg-5">
                         <p class="h1 fw-bold my-2 text-center text-md-start">PRODUCTION</p>
-                        <p class="h5 lh-base text-light">Lotsa stuff to do! Assets to draw, an amazing parallax
-                            animation as well, this website, the assambly of parasites and metadata, the candy machine
+                        <p class="h5 lh-base text-light">Lots of stuff to do! Assets to draw, some animation as well, this website, the assambly of parasites and metadata, the candy machine
                             implementation, testing and more testing. We better hurry up.</p>
                     </div>
                 </div>
@@ -472,7 +500,7 @@
                         <p class="h5 lh-base text-light">The mint day will NOT be announced. The mint price is yet to be
                             determined, but the intention is to have a fair price that isn't a barrier to entry, while
                             at the same time allowing us to perceive some monetary retribution and help us keep
-                            making artsy stuff.</p>
+                            making art-related stuff.</p>
                     </div>
                 </div>
                 <!-- STAGE 4 -->
@@ -539,7 +567,7 @@
                         MEET THE TEAM
                     </p>
                     <p class="h1 fw-bold my-4">IN THE FLESH</p>
-                    <p class="h4 lh-base text-light">Hi! We're two friends collaborating on artsy projects and we're
+                    <p class="h4 lh-base text-light">Hi! We're two friends collaborating on art-related projects and we're
                         human too! Get to know us a bit better.</p>
 
                 </div>
@@ -554,7 +582,7 @@
                         <div class="card-body text-center align-middle">
                             <img src="https://randomuser.me/api/portraits/men/11.jpg" class="rounded-circle m-3" alt=""
                                 height="170px">
-                            <h3 class="card-title mb-3">Berkuliao Pepo</h3>
+                            <h3 class="card-title mb-3">player 1</h3>
                             <div class="h4 lh-base">
                                 <a href="#"><i class="bi bi-twitter text-light mx-1"></i></a>
                                 <a href="#"><i class="bi bi-instagram text-light mx-1"></i></a>
@@ -563,8 +591,7 @@
                             </div>
                             <div class="card-text h6 px-4">
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nostrum fuga
-                                    voluptate sed ducimus doloribus consectetur quam at ad tenetur?
+                                    The Art, Idea, Graphic Design, and everything else.
                                 </p>
 
                             </div>
@@ -578,7 +605,7 @@
                         <div class="card-body text-center">
                             <img src="https://randomuser.me/api/portraits/men/16.jpg" class="rounded-circle m-3" alt=""
                                 height="170px">
-                            <h3 class="card-title mb-3">Porkajo Bancetta</h3>
+                            <h3 class="card-title mb-3">player 2</h3>
                             <div class="h4 lh-base">
                                 <a href="#"><i class="bi bi-twitter text-light mx-1"></i></a>
                                 <a href="#"><i class="bi bi-instagram text-light mx-1"></i></a>
@@ -587,8 +614,7 @@
                             </div>
                             <div class="card-text h6 mb-4 px-4">
                                 <p>
-                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Blanditiis nostrum fuga
-                                    voluptate sed ducimus doloribus consectetur quam at ad tenetur?
+                                    Website, Animation, Tech, and everything else.
                                 </p>
                             </div>
 
@@ -630,7 +656,7 @@
                         FREQUENTLY ASKED QUESTIONS
                     </p>
                     <p class="h1 fw-bold my-4">WHAT IS LOVE?!</p>
-                    <p class="h4 lh-base text-light">Baby don't hurt me 🎵 <br> I mean... <br> some people asked some
+                    <p class="h4 lh-base text-light">I mean... <br> some people asked some
                         stuff
                         and we gave them some answers. Here they are for future reference.</p>
 
@@ -757,7 +783,7 @@
                         AND TO WRAP THINGS UP
                     </p>
                     <p class="h1 fw-bold mt-4">SOME FINAL WORDS</p>
-                    <!-- <p class="h4 lh-base text-light">Hi! We're two friends collaborating on artsy projects and we're
+                    <!-- <p class="h4 lh-base text-light">Hi! We're two friends collaborating on art-related projects and we're
                         human too! Get to know us a bit better.</p> -->
 
                 </div>

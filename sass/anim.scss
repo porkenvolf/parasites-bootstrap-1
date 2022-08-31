@@ -35,7 +35,8 @@
 @media screen and (min-aspect-ratio:16/18) and (max-aspect-ratio:22/18){
     :root{
         --bgScroll: calc(100vh - var(--bgHeight)*1);
-        --logoBigScroll: calc(100vw * (-0.3));
+        --logoBigScroll: calc(-70%);
+        /* --logoBigScroll: calc(100vw * (-0.3)); */
     }
     
 
@@ -596,6 +597,7 @@
         }
     }
     .logoBig{
+        display: none;
         img{
             width: 50%;
             height: auto;
